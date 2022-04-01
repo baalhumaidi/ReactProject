@@ -41,12 +41,12 @@ justify-items: center;
 font-size: 15px;
 
 }
-/* .TheCard{
+.TheCard{
 display: flex;
 flex-direction: column;
 justify-content: space-between;
 align-items: center;
-} */
+}
  
 /* .Container{
 width: 500px;

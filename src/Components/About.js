@@ -9,9 +9,9 @@ import { Container } from 'react-bootstrap';
 
 
 const AboutStyle = styled.div`
-// display: flex;
-// justify-items: center;
-// justify-content: center;
+display: flex;
+justify-items: center;
+justify-content: center;
 
 .TheCards{
   margin-top: 1rem;
@@ -19,6 +19,7 @@ const AboutStyle = styled.div`
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  
   } 
 img-pic {
   margin-top: 1rem;
@@ -51,7 +52,6 @@ export default function About() {
        {Cards}
       
      </div> 
-   
      </div>
      </AboutStyle>
      </Container>

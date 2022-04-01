@@ -12,7 +12,7 @@ const ContactSectionStyle = styled.div`
   
   .contactSection__wrapper{
       display:flex;
-    //   gap:5rem;
+       gap:5rem;
       margin-top: 0.5rem;
       justify-content: space-around;
       position: relative;
@@ -37,12 +37,9 @@ const ContactSectionStyle = styled.div`
     max-width: 300px;
     width: 100%;
     border-radius: 12px;
-    /* padding-left: 3rem; */
+ 
   }
-//   @media only screen and (max-width: 500px) {
-//     .contactSection__wrapper {
-//       flex-direction: column;
-//     }
+/
     .contactSection__wrapper::after {
       display: flex;
       color: var(--black);
@@ -59,19 +56,7 @@ const ContactSectionStyle = styled.div`
   `;
 
 
-  const ItemStyles = styled.div`
-  padding: 2rem;
-  background-color: var(--deep-dark);
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  border-radius: 8px;
-  margin-bottom: 2rem;
-
-  svg {
-    width: 3.5rem;
-  }
-`;
+  
 function ContactSection() {
 
   return (

@@ -1,8 +1,10 @@
 import React from 'react'
 import styled from 'styled-components';
+import {useNavigate , Link,Route,Routes} from 'react-router-dom';
+import { Container} from 'react-bootstrap';
 
-import { Container, Row,Col } from 'react-bootstrap';
 import SingleProfile from './SingleProfile';
+
 
 const AboutStyle = styled.div`
 
@@ -14,10 +16,8 @@ const AboutStyle = styled.div`
   border-radius: 112px;
 }
 .social-icon{
-  width: 30px;
-  height: 30px;
-
-  
+  width: 35px;
+  height: 35px;
 }
 `;
 
@@ -26,26 +26,33 @@ return
 } ;
 
 function Card(props) {
+  let navigate = useNavigate(); 
+  const routeChange = () =>{ 
+    let path="/SingleProfile"; 
+    navigate(path);
+  }
   return (
    <Container> 
      <AboutStyle> 
       
      <div className='app-Card'>
-    <span onClick={learnmore}> 
+    <span onClick={routeChange}> 
     <img className='img-pic' src={props.obj.img} alt='' ></img>
     </span>
-    <Row>
-    <Col sm={9}>
+   
+ 
+
+    <Link to={"/SingleProfile"} className="font-title"> {props.obj.title}
     
-    <span onClick={learnmore()} className="font-title"> {props.obj.title} </span></Col> 
-   <Col sm={2} ><a  href={props.obj.Linkedin} >
-    {/* <FaLinkedin /> */}
-<img src="linkedin2.png" alt="" class="social-icon" />
-</a> </Col>
- 
- </Row>
+     </Link>
+     <Routes> 
+     <Route path={"/SingleProfile"} component={<SingleProfile/>} />
+     </Routes>
     <h6 > {props.obj.position}</h6>
- 
+    <a  href={props.obj.Linkedin} >
+    
+<img src="linkedin2.png" alt="" class="social-icon" />
+</a>
 </div>
 </AboutStyle>
 </Container>
