@@ -1,18 +1,94 @@
+
+*{
+  margin-top: 10px;
+}
 .App {
+  display:flow-root;
   text-align: center;
+ background-color: #0f4057;
+ color: white;
+ 
+  
+}
+.App1{
+
+  
+  min-height: 100vh;
+   display:inline-block;
+  flex-direction:column;
+  justify-content: center;
+align-items: center; 
+  /* text-align: center; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.mp-3{
+  width: 300px;
 }
+.Card{
+  font-family: 'Times New Roman', Times, serif;
+  width: 300px;
+  height: 300px;
+  border-radius: 100px;
+display:flex;
+flex-direction: row;
+justify-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.font-title{
+font-size: 15px;
+
+}
+/* .TheCard{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+} */
+ 
+/* .Container{
+width: 500px;
+height: 500px;
+margin-left: 10px;
+display: flex;
+flex-wrap: wrap;
+text-align: center;
+justify-items: center;
+
+border: 1px rgb(47, 0, 255) solid;
+} */
+
+
+
+.app-Card {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  height: 250px;
+
+  
+  width: 225px;
+  text-align :center;
+  justify-content:space-between ;
+  align-items: center;
+  }  
+
+
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
+  /* .App-logo {
     animation: App-logo-spin infinite 20s linear;
-  }
+  } */
 }
 
+.List{
+  align-items: right;
+  justify-content: center;
+  display: flex;
+  background-color: aqua;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
